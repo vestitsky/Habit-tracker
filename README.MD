@@ -10,7 +10,7 @@ If interested in learning more about how habits affect our lives, I can recommen
 
 As a complement to the ideas of this author, my project proposes to turn the process of acquiring or getting rid of habits into a kind of game where you can track your progress every day.
 
-## What does this script look like?
+## How does this script look like?
 
 ![UI](img/ui.png)
 
