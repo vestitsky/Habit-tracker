@@ -13,8 +13,3 @@ As a complement to the ideas of this author, my project proposes to turn the pro
 ## How does this script look like?
 
 ![UI](img/ui.png)
-
-### Summary
-
-I will be glad to any support for this project. 
-Thanks for watching 🤗
