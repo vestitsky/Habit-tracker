@@ -93,6 +93,8 @@ class Database:
         # Set null count days to habit
         self.cursor.execute(
             'UPDATE HABITS SET HABIT_DAYS = ? WHERE id = ?', (0, habit_id))
+        self.cursor.execute(
+            'UPDATE HABITS SET LAST_CHECK = ? WHERE id = ?', (self.current_date, habit_id))
 
     def update_habit_score(self, habit_id, new_habit_score):
         # Update habit score in edit
@@ -222,6 +224,8 @@ class Habits_print:
                                 str(habit_variance) + " days ? (y/n): ")
             if update_task == "y":
                 self.db.update_habit(habit_id, habit_variance)
+            if update_task == "n":
+                self.db.update_habit(habit_id, 1)
             else:
                 self.main_update()
         elif habit_variance >= 1:
@@ -315,5 +319,6 @@ class Habits_print:
                       "Last check: " + last_check_date)
 
 
+# Start app
 db = Database('Habits_DB.db')
 ui_manager = Habits_print(db)
