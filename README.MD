@@ -13,3 +13,18 @@ As a complement to the ideas of this author, my project proposes to turn the pro
 ## How does this script look like?
 
 ![UI](img/ui.png)
+
+## How to use it?
+
+At the moment it is a console script in Python. To run it, you need to install this programming language and enter the following command: 
+
+```
+python habit_tracker.py
+```
+
+For convenience, if you are a Windows user. I recommend installing the **auto-py-to-exe** module, with the help of which you can create an exe file and by throwing it into a convenient directory, creating a shortcut, you can run it habitually like other programs.
+
+```
+pip install auto-py-to-exe
+```
+
